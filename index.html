@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="form">
+        <div class="item">
+            <label for="nome">Digite seu Nome</label>
+            <input type="text" id="nome" placeholder="Nome">
+        </div>
+        <div class="item">
+            <label for="idade">Digite sua Idade</label>
+            <input type="number" id="idade" placeholder="Idade">
+        </div>
+        <div class="item">
+            <label for="cargo">Qual seu Cargo?</label>
+            <div class="escolhas" id="choices">
+                <input type="radio" name="cargo" value="desenvolvedor" id="desenvolvedor" onchange="escolhaArea('desenvolvedor')">
+                <label for="desenvolvedor">desenvolvedor</label>
+                
+                <input type="radio" name="cargo" value="gerente" id="gerente" onchange="escolhaArea('gerente')">
+                <label for="gerente">gerente</label>
+            </div>
+        </div>
+        
+    </form>
+    <div class="apresentacao" id="apresentacao">
+        <div class="side1">
+            <img src="https://static.thenounproject.com/png/363640-200.png" alt="">
+        </div>
+        <div class="side2">
+            <h1 id="NomeApresentação">Bruno</h1>
+            <div class="item_list">
+                <div class="s-1">
+                    <p>Idade:<span id="IdadeApresentação">20</span></p>
+                </div>
+                <div class="s-1">
+                    <p>Cargo:<span id="CargoApresentação">desenvolvedor</span></p>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="s-1"  style="width:100%">
+                    <p id="Especialidade">Linguagem:<span>Python</span></p>
+            </div>
+            
+        </div>
+        <p id="apresentarFuncionario" style="border-top: 1px solid #0000002f; padding-top:1em">Bruno</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
